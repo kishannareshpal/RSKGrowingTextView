@@ -190,8 +190,8 @@ public typealias HeightChangeUserActionsBlockType = ((_ oldHeight: CGFloat, _ ne
     
     private func commonInitializer() {
         contentInset = UIEdgeInsets(top: 1.0, left: 0.0, bottom: 1.0, right: 0.0)
-        scrollsToTop = false
-        showsVerticalScrollIndicator = false
+        scrollsToTop = true
+        showsVerticalScrollIndicator = true
         
         for constraint in constraints {
             if constraint.firstAttribute == .height && constraint.relation == .equal {
